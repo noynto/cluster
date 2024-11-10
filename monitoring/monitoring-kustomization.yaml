@@ -6,12 +6,12 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: components
+  path: monitoring/components
   prune: true
   retryInterval: 30s
   sourceRef:
     kind: GitRepository
-    name: monitoring
+    name: flux-system
   targetNamespace: monitoring
   timeout: 3m0s
   wait: true

@@ -2,10 +2,10 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: node-exporter
+  name: monitoring
   namespace: flux-system
 spec:
   interval: 1m0s
   ref:
     branch: main
-  url: https://github.com/noynto/cluster/monitoring/node-exporter
+  url: https://github.com/noynto/cluster/monitoring

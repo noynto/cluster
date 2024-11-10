@@ -9,3 +9,6 @@ resources:
   - prometheus/config-map.yaml
   - prometheus/deployment.yaml
   - prometheus/service.yaml
+  - grafana/config-map.yaml
+  - grafana/deployment.yaml
+  - grafana/service.yaml

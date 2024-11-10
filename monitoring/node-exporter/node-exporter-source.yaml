@@ -8,4 +8,4 @@ spec:
   interval: 1m0s
   ref:
     branch: main
-  url: https://github.com/noynto/cluster
+  url: https://github.com/noynto/cluster/monitoring/node-exporter

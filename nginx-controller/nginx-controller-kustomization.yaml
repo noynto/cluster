@@ -1,0 +1,17 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: nginx-controller
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  path: nginx-controller/components
+  prune: true
+  retryInterval: 30s
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  targetNamespace: nginx-controller
+  timeout: 3m0s
+  wait: true
